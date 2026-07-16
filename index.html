@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks - I'm Web.Build</title>
+    
+    <!-- SEO & PWA -->
+    <meta name="description" content="Starbucks Premium Menu">
+    <link rel="manifest" href="manifest.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>I'M <br>WEB.BUILD</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Rewards</a>
+            <a href="#">Gift Cards</a>
+        </nav>
+        <div class="user-actions">
+            <!-- Icon placeholders -->
+            <span>👤</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <!-- Marquee Ribbon -->
+    <div class="marquee-ribbon">
+        <div class="marquee-content">
+            DRINK &nbsp; ASICS &nbsp; IMWEBBUILDER &nbsp; CONVERSE &nbsp; VANS &nbsp; FILAS &nbsp; DRINK &nbsp; ASICS &nbsp; IMWEBBUILDER &nbsp; CONVERSE &nbsp; VANS &nbsp; FILAS
+        </div>
+    </div>
+
+    <!-- Menu Section (Rendered by JS) -->
+    <section class="menu-section" id="menu-section">
+        <div class="menu-grid" id="menu-grid">
+            <!-- Sản phẩm sẽ được inject qua app.js -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h4>GET IN TOUCH</h4>
+            <h1>LET'S TALK ABOUT YOUR COFFEE</h1>
+            <ul>
+                <li><strong>Phone Number:</strong> +1 (234) 567-890</li>
+                <li><strong>Email Address:</strong> support@sneakpeak.com</li>
+                <li><strong>Our HQ:</strong> 123 Sneaker St, New York, NY</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-group-row">
+                    <div class="input-box">
+                        <label>FULL NAME</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="input-box">
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label>SUBJECT</label>
+                    <input type="text" placeholder="How can we help?">
+                </div>
+                <div class="input-box">
+                    <label>MESSAGE</label>
+                    <textarea placeholder="Write your message here..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Promo Banners -->
+    <section class="promo-banners-container">
+        <div class="promo-card orange">
+            <div class="promo-text">
+                <h3>Fresh Vegetable & Fruit Basket</h3>
+                <p>Fresh packed to order</p>
+            </div>
+        </div>
+        <div class="promo-card grey">
+            <div class="promo-text">
+                <h3>Best Cuisine From The Sea Of America</h3>
+                <p>Premium seafood available everyday!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-col">
+            <h3>I'M WEB.BUILD</h3>
+            <p>Food M26 ©2026 All Rights Reserved By - Im Web Builder</p>
+        </div>
+        <div class="footer-col">
+            <h4>Menu</h4>
+            <a href="#">Home</a>
+            <a href="#">Offers</a>
+            <a href="#">Service</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Information</h4>
+            <a href="#">Menu</a>
+            <a href="#">Quality</a>
+            <a href="#">Make A Choice</a>
+            <a href="#">Fast Delivery</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>+123456789</p>
+            <p>Explore</p>
+            <p>info@Fooddash.com</p>
+            <p>12, Maharashtra, Indian</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Item Added</h2>
+            <p>Sản phẩm đã được thêm vào giỏ hàng của bạn!</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
