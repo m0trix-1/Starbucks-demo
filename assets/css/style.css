@@ -1,0 +1,223 @@
+/* RESET & BIẾN CƠ BẢN */
+:root {
+    --bg-dark: #071310;
+    --starbucks-green: #006241;
+    --card-bg: #ffffff;
+    --text-light: #ffffff;
+    --text-dark: #1e3932;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+.nav-links {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: 600;
+}
+.nav-links a.active {
+    background: var(--starbucks-green);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* MARQUEE RIBBON */
+.marquee-ribbon {
+    background-color: var(--starbucks-green);
+    color: #ffffff;
+    padding: 15px 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 60px 5%;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.product-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-img {
+    max-width: 150px;
+    height: auto;
+    margin-top: -60px; /* Hiệu ứng ly nổi lên trên thẻ */
+}
+.product-info {
+    margin-top: 15px;
+    width: 100%;
+}
+.product-tag {
+    display: block;
+    background: var(--starbucks-green);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.btn-add-to-cart {
+    background: var(--starbucks-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-add-to-cart:hover {
+    background: #004d33;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    display: flex;
+    padding: 60px 5%;
+    gap: 40px;
+}
+.contact-info, .contact-form {
+    flex: 1;
+}
+.contact-form {
+    background: #112822;
+    padding: 40px;
+    border-radius: 20px;
+}
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+.input-box {
+    margin-bottom: 20px;
+    flex: 1;
+}
+.input-box label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: #888;
+}
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 15px;
+    background: #0b1e19;
+    border: 1px solid #222;
+    color: white;
+    border-radius: 8px;
+}
+.btn-submit {
+    background: none;
+    border: 1px solid #444;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* PROMO BANNERS */
+.promo-banners-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 5%;
+}
+.promo-card {
+    border-radius: 16px;
+    padding: 40px;
+    height: 200px;
+}
+.promo-card.orange { background-color: #f2a93b; color: #000; }
+.promo-card.grey { background-color: #212121; }
+
+/* FOOTER */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 5%;
+    border-top: 1px solid #222;
+}
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 20px;
+}
+.footer-col a, .footer-col p {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: white;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
